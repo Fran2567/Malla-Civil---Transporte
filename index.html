@@ -1,1 +1,364 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Malla Curricular – Ingeniería Civil en Transporte PUCV</title>
+  <link rel="stylesheet" href="estilos.css" />
+</head>
+<body>
+  <header style="text-align:center;margin-top:1rem;">
+    <h1>Malla Curricular – Ingeniería Civil en Transporte PUCV</h1>
+    <p>Clic en un ramo para marcarlo como <strong>aprobado</strong>. Al cumplir sus requisitos se desbloquean los cursos dependientes.</p>
+  </header>
+
+  <!-- *********** MALLA CURRICULAR *********** -->
+  <section class="curriculum" id="malla">
+
+    <!-- === 1° Semestre === -->
+    <article class="course" data-id="DES_INT_COM" data-prereqs="" data-sem="1">
+      <span class="course__code">DES_INT_COM</span>
+      <span class="course__name">Desarrollo Integral y Comunicación para Ingeniería</span>
+      <span class="course__semester">1°</span>
+    </article>
+
+    <article class="course" data-id="INTRO_FIS" data-prereqs="" data-sem="1">
+      <span class="course__code">INTRO_FIS</span>
+      <span class="course__name">Introducción a la Física</span>
+      <span class="course__semester">1°</span>
+    </article>
+
+    <article class="course" data-id="INTRO_ICT" data-prereqs="" data-sem="1">
+      <span class="course__code">INTRO_ICT</span>
+      <span class="course__name">Introducción a la Ingeniería Civil en Transporte</span>
+      <span class="course__semester">1°</span>
+    </article>
+
+    <article class="course" data-id="FUND_MAT" data-prereqs="" data-sem="1">
+      <span class="course__code">FUND_MAT</span>
+      <span class="course__name">Fundamentos de Matemáticas para Ingeniería</span>
+      <span class="course__semester">1°</span>
+    </article>
+
+    <!-- === 2° Semestre === -->
+    <article class="course is-locked" data-id="FIS_ING" data-prereqs="INTRO_FIS" data-sem="2">
+      <span class="course__code">FIS_ING</span>
+      <span class="course__name">Física para Ingeniería</span>
+      <span class="course__semester">2°</span>
+    </article>
+
+    <article class="course is-locked" data-id="DIB_ING1" data-prereqs="INTRO_ICT" data-sem="2">
+      <span class="course__code">DIB_ING1</span>
+      <span class="course__name">Dibujo de Ingeniería 1</span>
+      <span class="course__semester">2°</span>
+    </article>
+
+    <article class="course is-locked" data-id="FUND_QUIM" data-prereqs="INTRO_ICT" data-sem="2">
+      <span class="course__code">FUND_QUIM</span>
+      <span class="course__name">Fundamentos de Química</span>
+      <span class="course__semester">2°</span>
+    </article>
+
+    <article class="course is-locked" data-id="CALC_DI" data-prereqs="FUND_MAT" data-sem="2">
+      <span class="course__code">CALC_DI</span>
+      <span class="course__name">Cálculo Diferencial e Integral</span>
+      <span class="course__semester">2°</span>
+    </article>
+
+    <article class="course is-locked" data-id="ALG_LINEAL" data-prereqs="FUND_MAT" data-sem="2">
+      <span class="course__code">ALG_LINEAL</span>
+      <span class="course__name">Álgebra Lineal</span>
+      <span class="course__semester">2°</span>
+    </article>
+
+    <!-- === 3° Semestre === -->
+    <article class="course is-locked" data-id="FIS_GT" data-prereqs="FIS_ING" data-sem="3">
+      <span class="course__code">FIS_GT</span>
+      <span class="course__name">Física General: Termodinámica y Ondas</span>
+      <span class="course__semester">3°</span>
+    </article>
+
+    <article class="course is-locked" data-id="CIEN_MAT" data-prereqs="FUND_QUIM" data-sem="3">
+      <span class="course__code">CIEN_MAT</span>
+      <span class="course__name">Ciencia de los Materiales</span>
+      <span class="course__semester">3°</span>
+    </article>
+
+    <article class="course is-locked" data-id="BIM" data-prereqs="DIB_ING1" data-sem="3">
+      <span class="course__code">BIM</span>
+      <span class="course__name">BIM</span>
+      <span class="course__semester">3°</span>
+    </article>
+
+    <article class="course is-locked" data-id="GEOMES" data-prereqs="DIB_ING1" data-sem="3">
+      <span class="course__code">GEOMES</span>
+      <span class="course__name">Geomesura</span>
+      <span class="course__semester">3°</span>
+    </article>
+
+    <article class="course" data-id="ENG1" data-prereqs="" data-sem="3">
+      <span class="course__code">ENG1</span>
+      <span class="course__name">Inglés 1</span>
+      <span class="course__semester">3°</span>
+    </article>
+
+    <article class="course is-locked" data-id="CALC_VV" data-prereqs="CALC_DI" data-sem="3">
+      <span class="course__code">CALC_VV</span>
+      <span class="course__name">Cálculo en Varias Variables</span>
+      <span class="course__semester">3°</span>
+    </article>
+
+    <!-- === 4° Semestre === -->
+    <article class="course is-locked" data-id="FIS_GE" data-prereqs="FIS_GT" data-sem="4">
+      <span class="course__code">FIS_GE</span>
+      <span class="course__name">Física General: Electromagnetismo</span>
+      <span class="course__semester">4°</span>
+    </article>
+
+    <article class="course is-locked" data-id="MEC_SOL" data-prereqs="CIEN_MAT" data-sem="4">
+      <span class="course__code">MEC_SOL</span>
+      <span class="course__name">Mecánica de Sólidos</span>
+      <span class="course__semester">4°</span>
+    </article>
+
+    <article class="course is-locked" data-id="EST_PROB" data-prereqs="CALC_VV" data-sem="4">
+      <span class="course__code">EST_PROB</span>
+      <span class="course__name">Estadística y Probabilidades</span>
+      <span class="course__semester">4°</span>
+    </article>
+
+    <article class="course is-locked" data-id="ENG2" data-prereqs="ENG1" data-sem="4">
+      <span class="course__code">ENG2</span>
+      <span class="course__name">Inglés 2</span>
+      <span class="course__semester">4°</span>
+    </article>
+
+    <article class="course is-locked" data-id="ECU_DIFF" data-prereqs="CALC_VV" data-sem="4">
+      <span class="course__code">ECU_DIFF</span>
+      <span class="course__name">Ecuaciones Diferenciales</span>
+      <span class="course__semester">4°</span>
+    </article>
+
+    <!-- === 5° Semestre === -->
+    <article class="course is-locked" data-id="PROG_MN" data-prereqs="CALC_VV" data-sem="5">
+      <span class="course__code">PROG_MN</span>
+      <span class="course__name">Programación y Métodos Numéricos</span>
+      <span class="course__semester">5°</span>
+    </article>
+
+    <article class="course is-locked" data-id="DIS_INN" data-prereqs="CIEN_MAT" data-sem="5">
+      <span class="course__code">DIS_INN</span>
+      <span class="course__name">Diseño, Innovación y Emprendimiento</span>
+      <span class="course__semester">5°</span>
+    </article>
+
+    <article class="course is-locked" data-id="ANAL_ST" data-prereqs="EST_PROB" data-sem="5">
+      <span class="course__code">ANAL_ST</span>
+      <span class="course__name">Análisis de Sistemas de Transporte</span>
+      <span class="course__semester">5°</span>
+    </article>
+
+    <article class="course is-locked" data-id="ING_LOG" data-prereqs="EST_PROB" data-sem="5">
+      <span class="course__code">ING_LOG</span>
+      <span class="course__name">Ingeniería Logística</span>
+      <span class="course__semester">5°</span>
+    </article>
+
+    <article class="course is-locked" data-id="ENG3" data-prereqs="ENG2" data-sem="5">
+      <span class="course__code">ENG3</span>
+      <span class="course__name">Inglés 3</span>
+      <span class="course__semester">5°</span>
+    </article>
+
+    <!-- === 6° Semestre === -->
+    <article class="course is-locked" data-id="TALL_INN" data-prereqs="DIS_INN" data-sem="6">
+      <span class="course__code">TALL_INN</span>
+      <span class="course__name">Taller de Innovación y Tecnologías en los Medios de Transporte</span>
+      <span class="course__semester">6°</span>
+    </article>
+
+    <article class="course is-locked" data-id="LOG_ABA" data-prereqs="ING_LOG" data-sem="6">
+      <span class="course__code">LOG_ABA</span>
+      <span class="course__name">Logística del Abastecimiento</span>
+      <span class="course__semester">6°</span>
+    </article>
+
+    <article class="course is-locked" data-id="ECO_TRAN" data-prereqs="ANAL_ST" data-sem="6">
+      <span class="course__code">ECO_TRAN</span>
+      <span class="course__name">Economía de Transporte</span>
+      <span class="course__semester">6°</span>
+    </article>
+
+    <article class="course is-locked" data-id="INV_OP" data-prereqs="PROG_MN" data-sem="6">
+      <span class="course__code">INV_OP</span>
+      <span class="course__name">Investigación de Operaciones</span>
+      <span class="course__semester">6°</span>
+    </article>
+
+    <article class="course is-locked" data-id="ENG4" data-prereqs="ENG3" data-sem="6">
+      <span class="course__code">ENG4</span>
+      <span class="course__name">Inglés 4</span>
+      <span class="course__semester">6°</span>
+    </article>
+
+    <!-- === 7° Semestre === -->
+    <article class="course is-locked" data-id="GEOT1" data-prereqs="CIEN_MAT" data-sem="7">
+      <span class="course__code">GEOT1</span>
+      <span class="course__name">Geotecnia 1</span>
+      <span class="course__semester">7°</span>
+    </article>
+
+    <article class="course is-locked" data-id="ING_ECON" data-prereqs="DIS_INN" data-sem="7">
+      <span class="course__code">ING_ECON</span>
+      <span class="course__name">Ingeniería Económica</span>
+      <span class="course__semester">7°</span>
+    </article>
+
+    <article class="course is-locked" data-id="SIG" data-prereqs="DIS_INN" data-sem="7">
+      <span class="course__code">SIG</span>
+      <span class="course__name">Sistema Integrado de Gestión</span>
+      <span class="course__semester">7°</span>
+    </article>
+
+    <article class="course is-locked" data-id="LOG_ALM" data-prereqs="LOG_ABA" data-sem="7">
+      <span class="course__code">LOG_ALM</span>
+      <span class="course__name">Logística del Almacenamiento</span>
+      <span class="course__semester">7°</span>
+    </article>
+
+    <article class="course is-locked" data-id="DEM_TRAN" data-prereqs="ECO_TRAN" data-sem="7">
+      <span class="course__code">DEM_TRAN</span>
+      <span class="course__name">Demanda de Transporte</span>
+      <span class="course__semester">7°</span>
+    </article>
+
+    <article class="course is-locked" data-id="TEOR_FLUJOS" data-prereqs="ANAL_ST" data-sem="7">
+      <span class="course__code">TEOR_FLUJOS</span>
+      <span class="course__name">Teoría de Flujos de Transporte</span>
+      <span class="course__semester">7°</span>
+    </article>
+
+    <!-- === 8° Semestre === -->
+    <article class="course is-locked" data-id="LOG_SUS" data-prereqs="LOG_ALM,TEOR_FLUJOS" data-sem="8">
+      <span class="course__code">LOG_SUS</span>
+      <span class="course__name">Transporte y Logística Sustentable</span>
+      <span class="course__semester">8°</span>
+    </article>
+
+    <article class="course is-locked" data-id="OBR_LIN" data-prereqs="GEOT1" data-sem="8">
+      <span class="course__code">OBR_LIN</span>
+      <span class="course__name">Obras Lineales</span>
+      <span class="course__semester">8°</span>
+    </article>
+
+    <article class="course is-locked" data-id="LOG_DIST" data-prereqs="LOG_ABA" data-sem="8">
+      <span class="course__code">LOG_DIST</span>
+      <span class="course__name">Logística de Distribución</span>
+      <span class="course__semester">8°</span>
+    </article>
+
+    <article class="course is-locked" data-id="SIM_MOD" data-prereqs="INV_OP" data-sem="8">
+      <span class="course__code">SIM_MOD</span>
+      <span class="course__name">Simulación y Modelos Aplicados a Sistemas de Transporte</span>
+      <span class="course__semester">8°</span>
+    </article>
+
+    <article class="course is-locked" data-id="CAPSTONE" data-prereqs="TALL_INN,DEM_TRAN" data-sem="8">
+      <span class="course__code">CAPSTONE</span>
+      <span class="course__name">Taller de Transporte y Logística (Capstone)</span>
+      <span class="course__semester">8°</span>
+    </article>
+
+    <article class="course is-locked" data-id="ING_TRANS" data-prereqs="TEOR_FLUJOS,OBR_LIN" data-sem="8">
+      <span class="course__code">ING_TRANS</span>
+      <span class="course__name">Ingeniería de Tránsito</span>
+      <span class="course__semester">8°</span>
+    </article>
+
+    <!-- === 9° Semestre === -->
+    <article class="course is-locked" data-id="TRANS_MAR" data-prereqs="ING_TRANS" data-sem="9">
+      <span class="course__code">TRANS_MAR</span>
+      <span class="course__name">Transporte Marítimo y Logística Portuaria</span>
+      <span class="course__semester">9°</span>
+    </article>
+
+    <article class="course is-locked" data-id="FINANZAS" data-prereqs="ING_ECON" data-sem="9">
+      <span class="course__code">FINANZAS</span>
+      <span class="course__name">Finanzas</span>
+      <span class="course__semester">9°</span>
+    </article>
+
+    <article class="course is-locked" data-id="PM1" data-prereqs="OBR_LIN" data-sem="9">
+      <span class="course__code">PM1</span>
+      <span class="course__name">Project Management 1</span>
+      <span class="course__semester">9°</span>
+    </article>
+
+    <article class="course is-locked" data-id="TRANS_CAR" data-prereqs="ING_TRANS" data-sem="9">
+      <span class="course__code">TRANS_CAR</span>
+      <span class="course__name">Transporte Carretero y Ferroviario</span>
+      <span class="course__semester">9°</span>
+    </article>
+
+    <article class="course is-locked" data-id="DIS_PLAN" data-prereqs="SIG" data-sem="9">
+      <span class="course__code">DIS_PLAN</span>
+      <span class="course__name">Diseño y Planificación de Proyectos en Transporte</span>
+      <span class="course__semester">9°</span>
+    </article>
+
+    <article class="course is-locked" data-id="TRANS_AER" data-prereqs="LOG_DIST" data-sem="9">
+      <span class="course__code">TRANS_AER</span>
+      <span class="course__name">Transporte Aéreo de Pasajeros y Carga</span>
+      <span class="course__semester">9°</span>
+    </article>
+
+    <!-- === 10° Semestre === -->
+    <article class="course is-locked" data-id="DATA_TRAN" data-prereqs="DEM_TRAN,DIS_PLAN" data-sem="10">
+      <span class="course__code">DATA_TRAN</span>
+      <span class="course__name">Ciencia de Datos para Transporte</span>
+      <span class="course__semester">10°</span>
+    </article>
+
+    <article class="course is-locked" data-id="PM2" data-prereqs="PM1" data-sem="10">
+      <span class="course__code">PM2</span>
+      <span class="course__name">Project Management 2</span>
+      <span class="course__semester">10°</span>
+    </article>
+
+    <article class="course is-locked" data-id="SIM_URB" data-prereqs="SIM_MOD" data-sem="10">
+      <span class="course__code">SIM_URB</span>
+      <span class="course__name">Herramientas de Simulación en Transporte Urbano</span>
+      <span class="course__semester">10°</span>
+    </article>
+
+    <article class="course is-locked" data-id="GCS" data-prereqs="TRANS_MAR,TRANS_CAR,TRANS_AER" data-sem="10">
+      <span class="course__code">GCS</span>
+      <span class="course__name">Gestión de la Cadena de Suministro</span>
+      <span class="course__semester">10°</span>
+    </article>
+
+    <article class="course is-locked" data-id="TALL_EVAL" data-prereqs="FINANZAS,DIS_PLAN" data-sem="10">
+      <span class="course__code">TALL_EVAL</span>
+      <span class="course__name">Taller de Evaluación de Proyectos de Transporte</span>
+      <span class="course__semester">10°</span>
+    </article>
+
+    <article class="course is-locked" data-id="GIS_MT" data-prereqs="LOG_SUS,DIS_PLAN" data-sem="10">
+      <span class="course__code">GIS_MT</span>
+      <span class="course__name">GIS, Movilidad y Territorio</span>
+      <span class="course__semester">10°</span>
+    </article>
+
+    <!-- === 11° Semestre === -->
+    <article class="course is-locked" data-id="TITULO" data-prereqs="TALL_EVAL" data-sem="11">
+      <span class="course__code">TITULO</span>
+      <span class="course__name">Proyecto de Título en Transporte</span>
+      <span class="course__semester">11°</span>
+    </article>
+
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
 
